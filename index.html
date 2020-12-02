@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        header, nav {
+            height: 120px;
+            background-color: pink;
+            border-radius: 15px;
+
+            margin: 15px auto;
+        }
+
+        nav{
+            text-align: center;
+            line-height: 120px;
+
+        }
+
+        nav a{
+            display: inline-block;
+
+            width: 55px;
+            height: 65px;
+            line-height: 65px;
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+
+            /*   a中文字水平居中和垂直居中*/
+            text-align: center; /*水平*/
+        }
+        header {
+            font-size: 41px;
+            text-align: center;
+            line-height: 120px;
+
+        }
+
+        video   {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="app">
+    <header>天使降临到我身边</header>
+    <nav>
+
+        <div class="club" style="">
+            <a href="#" >1</a>
+
+        </div>
+
+
+
+
+    </nav>
+
+    <video :src="url" controls="controls"></video>
+</div>
+
+
+<script>
+
+    var app = new Vue({
+
+      el:".app",
+      data(){
+        return ({
+          url:"./video/1.mp4",
+          arr:[
+            "./video/1.mp4",
+            "./video/2.mp4",
+            "./video/3.mp4","./video/4.mp4",
+            "./video/5.mp4",
+            "./video/6.mp4",
+            "./video/7.mp4",
+            "./video/8.mp4","./video/9.mp4",
+            "./video/10.mp4",
+            "./video/11.mp4",
+            "./video/12.mp4"
+
+
+          ]
+
+        });
+
+      },
+
+
+    });
+
+
+</script>
+</body>
+</html>
